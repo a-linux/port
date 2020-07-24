@@ -1,1 +1,969 @@
-sd
+<table class="wikitable" style="padding:2px;">
+<tbody><tr>
+<th>Статус</th>
+<th>Описание</th>
+<th>Цвет
+</th></tr>
+<tr style="background:#f9f9f9;">
+<td style="padding-left:1em;padding-right:1em;text-align:left;">Назначен
+</td>
+<td style="padding-left:1em;padding-right:1em;text-align:left;">Порт имеет зарегистрированное IANA применение
+</td>
+<td style="padding-left:1em;padding-right:1em;text-align:left;">белый
+</td></tr>
+<tr style="background:khaki;padding-left:1em;padding-right:1em;">
+<td style="padding-left:1em;padding-right:1em;text-align:left;">Конфликт
+</td>
+<td style="padding-left:1em;padding-right:1em;text-align:left;">Известно несколько применений наряду с зарегистрированным
+</td>
+<td style="padding-left:1em;padding-right:1em;text-align:left;">жёлтый
+</td></tr>
+<tr style="background:lightsteelblue;padding-left:1em;padding-right:1em;">
+<td style="padding-left:1em;padding-right:1em;text-align:left;">Свободен
+</td>
+<td style="padding-left:1em;padding-right:1em;text-align:left;">Порт не зарегистрирован IANA
+</td>
+<td style="padding-left:1em;padding-right:1em;text-align:left;">синий
+</td></tr></tbody></table>
+<h2><span id=".D0.A2.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D0.B0"></span><span class="mw-headline" id="Таблица">Таблица</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2_TCP_%D0%B8_UDP&amp;veaction=edit&amp;section=2" class="mw-editsection-visualeditor" title="Редактировать раздел «Таблица»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2_TCP_%D0%B8_UDP&amp;action=edit&amp;section=2" title="Редактировать раздел «Таблица»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id=".D0.9E.D0.B1.D1.89.D0.B5.D0.B8.D0.B7.D0.B2.D0.B5.D1.81.D1.82.D0.BD.D1.8B.D0.B5_.D0.BF.D0.BE.D1.80.D1.82.D1.8B"></span><span class="mw-headline" id="Общеизвестные_порты">Общеизвестные порты</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2_TCP_%D0%B8_UDP&amp;veaction=edit&amp;section=3" class="mw-editsection-visualeditor" title="Редактировать раздел «Общеизвестные порты»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2_TCP_%D0%B8_UDP&amp;action=edit&amp;section=3" title="Редактировать раздел «Общеизвестные порты»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable sortable">
+<tbody><tr>
+<th>Порт/Протокол</th>
+<th>Описание</th>
+<th>Использование
+</th></tr>
+<tr>
+<td>0/TCP,UDP</td>
+<td>резерв (допустимо использование в качестве значения порта источника, если отправляющий процесс не ожидает ответных сообщений)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>1/TCP,UDP</td>
+<td><a href="/wiki/Tcpmux" title="Tcpmux">TCPMUX (TCP Port Service Multiplexer)</a>&#160;— для обслуживания нескольких служб через один TCP-порт</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>2/TCP,UDP</td>
+<td>COMPRESSNET, процесс управления</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>3/TCP,UDP</td>
+<td>COMPRESSNET, процесс сжатия</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>5/TCP,UDP</td>
+<td>RJE (Remote Job Entry)&#160;— обслуживает отправку файлов и вывод отчётов при работе рабочей станции с <a href="/wiki/%D0%9C%D0%B5%D0%B9%D0%BD%D1%84%D1%80%D0%B5%D0%B9%D0%BC" title="Мейнфрейм">мейнфреймами</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>7/TCP,UDP</td>
+<td>ECHO&#160;— предназначен для тестирования связи путём отправки данных на сервер и получения от него их же в неизменном виде</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>9/TCP,UDP</td>
+<td>DISCARD&#160;— предназначен для тестирования связи путём отправки данных на сервер, который отбрасывает принятое, не отправляя никакого ответа. Также используется для <a href="/wiki/Wake-on-LAN" title="Wake-on-LAN">Wake-on-LAN</a>-удалённого включения компьютера.</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>11/TCP,UDP</td>
+<td>SYSTAT&#160;— выдаёт список активных пользователей в операционной системе</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>13/TCP,UDP</td>
+<td>DAYTIME&#160;— предназначен для тестирования связи путём получения от сервера текущих даты и времени в текстовом виде</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>15/TCP</td>
+<td>не назначено; ранее&#160;— <a href="/wiki/NETSTAT" class="mw-redirect" title="NETSTAT">NETSTAT</a></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>17/TCP,UDP</td>
+<td><a href="/wiki/Quote_of_the_day" title="Quote of the day">QOTD (Quote of the Day)</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>18/TCP,UDP</td>
+<td><span class="iw plainlinks" data-title="Message Send Protocol" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Message_Send_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Message Send Protocol (страница отсутствует)">MSP (Message Send Protocol)</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Message_Send_Protocol" class="extiw" title="en:Message Send Protocol"><span class="iw&#95;_tooltip" title="Message Send Protocol — версия статьи «Message Send Protocol» на английском языке">[en]</span></a></sup></span></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>19/TCP,UDP</td>
+<td><a href="/wiki/CHARGEN" title="CHARGEN">CHARGEN (Character Generator)</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>20/TCP</td>
+<td>FTP-DATA&#160;— для передачи данных <a href="/wiki/FTP" title="FTP">FTP</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>21/TCP</td>
+<td>FTP&#160;— для передачи команд <a href="/wiki/FTP" title="FTP">FTP</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>22/TCP,UDP</td>
+<td><a href="/wiki/SSH" title="SSH">SSH (Secure SHell)</a>&#160;— криптографический сетевой протокол для безопасной передачи данных</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>23/TCP,UDP</td>
+<td><a href="/wiki/Telnet" title="Telnet">Telnet</a>&#160;— применяется для передачи текстовых сообщений в незашифрованном виде</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>24/TCP,UDP</td>
+<td>PRIV-MAIL&#160;— для использования в любых частных системах пересылки почтовых сообщений</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>25/TCP,UDP</td>
+<td><a href="/wiki/SMTP" title="SMTP">SMTP (Simple Mail Transfer Protocol)</a>&#160;— применяется для пересылки почтовых сообщений в виде незашифрованного текста</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>26/TCP,UDP</td>
+<td>RSFTP&#160;— упрощенный аналог протокола <a href="/wiki/FTP" title="FTP">FTP</a></td>
+<td>Неофициально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>26/UDP</td>
+<td>использовался в игре <a href="/wiki/Dungeon_Siege_II" title="Dungeon Siege II">Dungeon Siege II</a></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>27/TCP,UDP</td>
+<td>NSW-FE (NSW User System FE)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>29/TCP,UDP</td>
+<td>MSG-ICP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>31/TCP,UDP</td>
+<td>MSG-AUTH</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>33/TCP,UDP</td>
+<td>DSP (Display Support Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>35/TCP,UDP</td>
+<td>PRIV-PRINT&#160;— для использования любыми частными <a href="/wiki/%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80_%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%B8" class="mw-redirect" title="Сервер печати">серверами печати</a></td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>35/UDP</td>
+<td>использовался в игре <a href="/wiki/Delta_Force_(%D1%81%D0%B5%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80)" title="Delta Force (серия игр)">Delta Force</a></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>37/TCP,UDP</td>
+<td><span class="iw plainlinks" data-title="TIME (протокол)" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=TIME_(%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB)&amp;action=edit&amp;redlink=1" class="new" title="TIME (протокол) (страница отсутствует)">TIME</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Time_Protocol" class="extiw" title="en:Time Protocol"><span class="iw&#95;_tooltip" title="Time Protocol — версия статьи «TIME (протокол)» на английском языке">[en]</span></a></sup></span>&#160;— используется для синхронизации времени (устар.)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>38/TCP,UDP</td>
+<td>RAP (Route Access Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>39/TCP,UDP</td>
+<td>RLP (Resource Location Protocol)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>, протокол поиска ресурсов&#160;— служит для нахождения серверов, предоставляющих услуги верхнего уровня</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>41/TCP,UDP</td>
+<td>Graphics&#160;— используется графическими модулями некоторых браузерных программ</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>42/TCP,UDP</td>
+<td>NAME, NAMESERVER&#160;— <span class="iw plainlinks" data-title="ARPA Host Name Server Protocol" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=ARPA_Host_Name_Server_Protocol&amp;action=edit&amp;redlink=1" class="new" title="ARPA Host Name Server Protocol (страница отсутствует)">ARPA Host Name Server Protocol</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/ARPA_Host_Name_Server_Protocol" class="extiw" title="en:ARPA Host Name Server Protocol"><span class="iw&#95;_tooltip" title="ARPA Host Name Server Protocol — версия статьи «ARPA Host Name Server Protocol» на английском языке">[en]</span></a></sup></span>, протокол сервера имён <a href="/wiki/ARPA" class="mw-disambig" title="ARPA">ARPA</a> (устар.)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>42/TCP,UDP</td>
+<td><a href="/wiki/Windows_Internet_Name_Service" title="Windows Internet Name Service">WINS (Windows Internet Name Service)</a>&#160;— в настоящее время считается устаревшим</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>43/TCP,UDP</td>
+<td><a href="/wiki/WHOIS" title="WHOIS">WHOIS</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>44/TCP,UDP</td>
+<td>MPM-FLAGS (Message Processing Module, Flags)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>45/TCP,UDP</td>
+<td>MPM (Message Processing Module, receive)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>46/TCP,UDP</td>
+<td>MPM-SND (Message Processing Module, send)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>47/TCP,UDP</td>
+<td>NI-FTP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>48/TCP,UDP</td>
+<td>AUDITD (Digital Audit Daemon)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>49/TCP,UDP</td>
+<td><a href="/wiki/TACACS" title="TACACS">TACACS</a> Login Host protocol</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>50/TCP,UDP</td>
+<td>RE-MAIL-CK</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>51/TCP,UDP</td>
+<td>резерв; ранее&#160;— LA-MAINT (IMP Logical Address Maintenance)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>52/TCP,UDP</td>
+<td>XNS-TIME (<a href="/wiki/Xerox_Network_Services" title="Xerox Network Services">Xerox Network Services</a> Time Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>53/TCP,UDP</td>
+<td>DOMAIN (<a href="/wiki/Domain_Name_System" class="mw-redirect" title="Domain Name System">Domain Name System</a>, DNS)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>54/TCP,UDP</td>
+<td>XNS-CH (<a href="/wiki/Xerox_Network_Services" title="Xerox Network Services">Xerox Network Services</a> ClearingHouse)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>55/TCP,UDP</td>
+<td>ISI-GL (ISI Graphics Language)<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>56/TCP,UDP</td>
+<td>XNS-AUTH (<a href="/wiki/Xerox_Network_Services" title="Xerox Network Services">Xerox Network Services</a> Authentication)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>56/TCP,UDP</td>
+<td>RAP (Route Access Protocol)<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>57/TCP,UDP</td>
+<td>PRIV-TERM&#160;— для любых служб, обеспечивающих терминальный доступ; ранее&#160;— MTP (<span class="iw plainlinks" data-title="Mail Transfer Protocol" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Mail_Transfer_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Mail Transfer Protocol (страница отсутствует)">Mail Transfer Protocol</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Mail_Transfer_Protocol" class="extiw" title="en:Mail Transfer Protocol"><span class="iw&#95;_tooltip" title="Mail Transfer Protocol — версия статьи «Mail Transfer Protocol» на английском языке">[en]</span></a></sup></span>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>58/TCP,UDP</td>
+<td>XNS-MAIL (<a href="/wiki/Xerox_Network_Services" title="Xerox Network Services">Xerox Network Services</a> Mail)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>59/TCP,UDP</td>
+<td>PRIV-FILE&#160;— для любых служб обработки файлов</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>61/TCP,UDP</td>
+<td>NI-MAIL</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>62/TCP,UDP</td>
+<td>ACAS (ACA Services)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>63/TCP,UDP</td>
+<td>WHOISPP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>64/TCP,UDP</td>
+<td>COVIA</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>65/TCP,UDP</td>
+<td>TACACS-DS (<a href="/wiki/TACACS" title="TACACS">TACACS</a> Database Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>66/TCP,UDP</td>
+<td>SQL-NET</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>67/TCP,UDP</td>
+<td>BOOTPS (<a href="/wiki/Bootstrap_Protocol" title="Bootstrap Protocol">Bootstrap Protocol</a> Server)&#160;— для сервера, с которого выполняется загрузка бездисковых рабочих станций; также используется DHCP (<a href="/wiki/Dynamic_Host_Configuration_Protocol" class="mw-redirect" title="Dynamic Host Configuration Protocol">Dynamic Host Configuration Protocol</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>68/TCP,UDP</td>
+<td>BOOTPC (<a href="/wiki/Bootstrap_Protocol" title="Bootstrap Protocol">Bootstrap Protocol</a> Client)&#160;— для клиентов бездисковых рабочих станций, загружающихся с сервера BOOTP; также используется DHCP (<a href="/wiki/Dynamic_Host_Configuration_Protocol" class="mw-redirect" title="Dynamic Host Configuration Protocol">Dynamic Host Configuration Protocol</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>69/TCP,UDP</td>
+<td>TFTP (<a href="/wiki/Trivial_File_Transfer_Protocol" title="Trivial File Transfer Protocol">Trivial File Transfer Protocol</a>)&#160;— тривиальный FTP применяется, например, при установке операционной системы на большое количество компьютеров в сетях предприятий. Для этого сервер TFTP и поддержка удалённого развёртывания (UAM) включены в состав серверных ОС <a href="/wiki/Windows_NT" title="Windows NT">Windows NT4 Server</a> и новее</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>70/TCP,UDP</td>
+<td><a href="/wiki/Gopher_(%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9_%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB)" class="mw-redirect" title="Gopher (сетевой протокол)">Gopher</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>71/TCP,UDP</td>
+<td>NETRJS-1 (<span class="iw plainlinks" data-title="Remote job entry" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Remote_job_entry&amp;action=edit&amp;redlink=1" class="new" title="Remote job entry (страница отсутствует)">Remote job entry</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Remote_job_entry" class="extiw" title="en:Remote job entry"><span class="iw&#95;_tooltip" title="Remote job entry — версия статьи «Remote job entry» на английском языке">[en]</span></a></sup></span> Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>72/TCP,UDP</td>
+<td>NETRJS-2 (<span class="iw plainlinks" data-title="Remote job entry" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Remote_job_entry&amp;action=edit&amp;redlink=1" class="new" title="Remote job entry (страница отсутствует)">Remote job entry</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Remote_job_entry" class="extiw" title="en:Remote job entry"><span class="iw&#95;_tooltip" title="Remote job entry — версия статьи «Remote job entry» на английском языке">[en]</span></a></sup></span> Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>73/TCP,UDP</td>
+<td>NETRJS-3 (<span class="iw plainlinks" data-title="Remote job entry" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Remote_job_entry&amp;action=edit&amp;redlink=1" class="new" title="Remote job entry (страница отсутствует)">Remote job entry</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Remote_job_entry" class="extiw" title="en:Remote job entry"><span class="iw&#95;_tooltip" title="Remote job entry — версия статьи «Remote job entry» на английском языке">[en]</span></a></sup></span> Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>74/TCP,UDP</td>
+<td>NETRJS-4 (<span class="iw plainlinks" data-title="Remote job entry" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Remote_job_entry&amp;action=edit&amp;redlink=1" class="new" title="Remote job entry (страница отсутствует)">Remote job entry</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Remote_job_entry" class="extiw" title="en:Remote job entry"><span class="iw&#95;_tooltip" title="Remote job entry — версия статьи «Remote job entry» на английском языке">[en]</span></a></sup></span> Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>75/TCP,UDP</td>
+<td>PRIV-DIAL&#160;— для любых приложений телефонного дозвона</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>76/TCP,UDP</td>
+<td>DEOS (Distributed External Object Store)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>77/TCP,UDP</td>
+<td>PRIV-RJE&#160;— для использования в любых службах <span class="iw plainlinks" data-title="Remote Job Entry" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Remote_Job_Entry&amp;action=edit&amp;redlink=1" class="new" title="Remote Job Entry (страница отсутствует)">Remote Job Entry</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Remote_job_entry" class="extiw" title="en:Remote job entry"><span class="iw&#95;_tooltip" title="Remote job entry — версия статьи «Remote Job Entry» на английском языке">[en]</span></a></sup></span></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>78/TCP,UDP</td>
+<td>VETTCP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>79/TCP,UDP</td>
+<td><a href="/wiki/Finger" title="Finger">Finger</a></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>80/TCP,UDP</td>
+<td>HTTP (<a href="/wiki/HyperText_Transfer_Protocol" class="mw-redirect" title="HyperText Transfer Protocol">HyperText Transfer Protocol</a>); ранее&#160;— WWW</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>81/TCP</td>
+<td>HTTP (<a href="/wiki/HyperText_Transfer_Protocol" class="mw-redirect" title="HyperText Transfer Protocol">HyperText Transfer Protocol</a>)</td>
+<td>Неофициально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>81/TCP</td>
+<td>используется в приложениях проекта <a href="/wiki/Tor" title="Tor">Tor</a> для целей маршрутизации</td>
+<td>Неофициально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>81/TCP,UDP</td>
+<td>HOSTS2-NS (HOSTS2 Name Server)</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>82/TCP,UDP</td>
+<td>XFER</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>82/UDP</td>
+<td>используется в приложениях проекта <a href="/wiki/Tor" title="Tor">Tor</a> для целей управления</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>83/TCP,UDP</td>
+<td>MIT-ML-DEV (MIT ML Device)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>84/TCP,UDP</td>
+<td>CTF (Common Trace Facility)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>85/TCP,UDP</td>
+<td>MIT-ML-DEV (MIT ML Device)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>86/TCP,UDP</td>
+<td>MFCOBOL (Micro Focus Cobol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>87/TCP,UDP</td>
+<td>PRIV-TERM-L&#160;— для любых приложений, обеспечивающих терминальное соединение типа «текстовый <a href="/wiki/%D0%A7%D0%B0%D1%82_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0)" title="Чат (программа)">чат</a>» (например, аналогичных <a href="/w/index.php?title=Talk_(software)&amp;action=edit&amp;redlink=1" class="new" title="Talk (software) (страница отсутствует)">talk</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>88/TCP,UDP</td>
+<td>Система аутентификации <a href="/wiki/Kerberos" title="Kerberos">Kerberos</a></td>
+<td>Официальн
+</td></tr>
+<tr>
+<td>89/TCP,UDP</td>
+<td>SU-MIT-TG (SU/MIT Telnet Gateway)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>90/TCP,UDP</td>
+<td>DNSIX (<a href="/wiki/DoD" class="mw-redirect" title="DoD">DoD</a> Network Security for Information eXchange) Securit Attribute Token Map</td>
+<td>Неофициально
+</td></tr>
+<tr bgcolor="khaki">
+<td>90/TCP,UDP</td>
+<td><span class="iw plainlinks" data-title="PointCast" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=PointCast&amp;action=edit&amp;redlink=1" class="new" title="PointCast (страница отсутствует)">PointCast</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/PointCast_(dotcom)" class="extiw" title="en:PointCast (dotcom)"><span class="iw&#95;_tooltip" title="PointCast (dotcom) — версия статьи «PointCast» на английском языке">[en]</span></a></sup></span></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>91/TCP,UDP</td>
+<td>MIT-DOV (MIT Dover Spooler)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>92/TCP,UDP</td>
+<td>NPP (Network Printing Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>93/TCP,UDP</td>
+<td>DCP (Device Control Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>94/TCP,UDP</td>
+<td>OBJCALL</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>95/TCP,UDP</td>
+<td>SUPDUP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>96/TCP,UDP</td>
+<td>DIXIE</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>97/TCP,UDP</td>
+<td>SWIFT-RVF (Swift Remote Virtural File Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>98/TCP,UDP</td>
+<td>TACNEWS</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>98/TCP</td>
+<td>LINUXCONF</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>99/TCP,UDP</td>
+<td>METAGRAM</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>100/TCP</td>
+<td>NEWACCT</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>101/TCP,UDP</td>
+<td>HOSTNAME (<span class="iw plainlinks" data-title="InterNIC" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=InterNIC&amp;action=edit&amp;redlink=1" class="new" title="InterNIC (страница отсутствует)">NIC</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Network_Information_Center" class="extiw" title="en:Network Information Center"><span class="iw&#95;_tooltip" title="Network Information Center — версия статьи «InterNIC» на английском языке">[en]</span></a></sup></span> Host Name Server)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>102/TCP,UDP</td>
+<td>ISO-TSAP (Transport <span class="iw plainlinks" data-title="Service Access Point" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Service_Access_Point&amp;action=edit&amp;redlink=1" class="new" title="Service Access Point (страница отсутствует)">Service Access Point</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Service_Access_Point" class="extiw" title="en:Service Access Point"><span class="iw&#95;_tooltip" title="Service Access Point — версия статьи «Service Access Point» на английском языке">[en]</span></a></sup></span> Class 0)<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>103/TCP,UDP</td>
+<td>GPPITNP (Genesis Point-to-Point Trans Net)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>104/TCP,UDP</td>
+<td>ACR-NEMA (ACR/NEMA <a href="/wiki/DICOM" title="DICOM">DICOM</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>105/TCP,UDP</td>
+<td>CSO, CSNET-NS (<span class="iw plainlinks" data-title="CCSO" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=CCSO&amp;action=edit&amp;redlink=1" class="new" title="CCSO (страница отсутствует)">CCSO</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/CCSO_Nameserver" class="extiw" title="en:CCSO Nameserver"><span class="iw&#95;_tooltip" title="CCSO Nameserver — версия статьи «CCSO» на английском языке">[en]</span></a></sup></span>/Mailbox Name Nameserver)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>106/TCP,UDP</td>
+<td>3COM-TSMUX</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>107/TCP,UDP</td>
+<td>RTELNET (Remote <a href="/wiki/Telnet" title="Telnet">Telnet</a> Service<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>108/TCP,UDP</td>
+<td>SNAGAS (<a href="/wiki/SNA" title="SNA">SNA</a> Gateway Access Server)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>109/TCP,UDP</td>
+<td>POP2 (<a href="/wiki/Post_Office_Protocol#История" class="mw-redirect" title="Post Office Protocol">Post Office Protocol</a> Version 2)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>110/TCP,UDP</td>
+<td>POP3 (<a href="/wiki/Post_Office_Protocol" class="mw-redirect" title="Post Office Protocol">Post Office Protocol</a> Version 3)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>110/UDP</td>
+<td>использовался в игре <a href="/wiki/Final_Fantasy_XI" title="Final Fantasy XI">Final Fantasy XI</a></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>111/TCP,UDP</td>
+<td>SUNRPC (<a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun</a> <a href="/wiki/Remote_Procedure_Call" class="mw-redirect" title="Remote Procedure Call">Remote Procedure Call</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>112/TCP,UDP</td>
+<td>MCIDAS (McIDAS Data Transmission)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>113/TCP,UDP</td>
+<td>AUTH (Authentication Service)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>113/TCP</td>
+<td><a href="/wiki/Ident" title="Ident">IDENT</a>&#160;— старая система идентификации, до сих пор используется в <a href="/wiki/IRC" title="IRC">IRC</a>-серверах</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="lightsteelblue">
+<td>114/TCP,UDP</td>
+<td>AUDIONEWS (Audio News Multicast)</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>115/TCP,UDP</td>
+<td>SFTP (<span class="iw plainlinks" data-title="Simple File Transfer Protocol" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Simple_File_Transfer_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Simple File Transfer Protocol (страница отсутствует)">Simple File Transfer Protocol</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Simple_File_Transfer_Protocol" class="extiw" title="en:Simple File Transfer Protocol"><span class="iw&#95;_tooltip" title="Simple File Transfer Protocol — версия статьи «Simple File Transfer Protocol» на английском языке">[en]</span></a></sup></span>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>116/TCP,UDP</td>
+<td>ANSANOTIFY (ANSA REX Notify)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>117/TCP,UDP</td>
+<td>UUCP-PATH (<a href="/wiki/UUCP" class="mw-redirect" title="UUCP">UUCP</a> Path Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>118/TCP,UDP</td>
+<td>SQLSERV (<a href="/wiki/SQL" title="SQL">SQL</a> Services)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>119/TCP,UDP</td>
+<td>NNTP (<a href="/wiki/Network_News_Transfer_Protocol" class="mw-redirect" title="Network News Transfer Protocol">Network News Transfer Protocol</a>)&#160;— используется для отправки сообщений новостных рассылок</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>120/TCP,UDP</td>
+<td>CFDPTKT (<a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc1235">RFC 1235</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>121/TCP,UDP</td>
+<td>ERPC (Encore Expedited Remote Protocol Call)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>122/TCP,UDP</td>
+<td>SMAKYNET</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>123/TCP,UDP</td>
+<td>NTP (<a href="/wiki/Network_Time_Protocol" class="mw-redirect" title="Network Time Protocol">Network Time Protocol</a>)&#160;— используется для синхронизации времени</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>124/TCP,UDP</td>
+<td>ANSATRADER (ANSA REX Trader)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>125/TCP,UDP</td>
+<td>LOCUS-MAP (Locus PC-Interface Net Map Ser)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>125/TCP</td>
+<td>используется как альтернатива порту 25/TCP (<a href="/wiki/SMTP" title="SMTP">SMTP</a>)</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>126/TCP,UDP</td>
+<td>NXEdit; ранее&#160;— Unisys Unitary Login</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>127/TCP,UDP</td>
+<td>LOCUS-CON (Locus PC-Interface Conn Server)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>127/UDP</td>
+<td>использовался в игре <a href="/w/index.php?title=Command_and_Conquer_Generals&amp;action=edit&amp;redlink=1" class="new" title="Command and Conquer Generals (страница отсутствует)">Command and Conquer Generals</a></td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>128/TCP,UDP</td>
+<td>GSS-XLICEN (GSS X License Verification)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>129/TCP,UDP</td>
+<td>PWDGEN (Password Generator Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>130/TCP,UDP</td>
+<td>CISCO-FNA (Cisco FNATIVE)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>131/TCP,UDP</td>
+<td>CISCO-TNA (Cisco TNATIVE)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>132/TCP,UDP</td>
+<td>CISCO-SYS (Cisco SYSMAINT)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>133/TCP,UDP</td>
+<td>STATSRV (Statistics Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>134/TCP,UDP</td>
+<td>INGRES-NET</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>135/TCP,UDP</td>
+<td>EPMAP (<span class="iw plainlinks" data-title="Distributed Computing Environment" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Distributed_Computing_Environment&amp;action=edit&amp;redlink=1" class="new" title="Distributed Computing Environment (страница отсутствует)">DCE</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Distributed_Computing_Environment" class="extiw" title="en:Distributed Computing Environment"><span class="iw&#95;_tooltip" title="Distributed Computing Environment — версия статьи «Distributed Computing Environment» на английском языке">[en]</span></a></sup></span> Endpoint Mapper)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>135/TCP,UDP</td>
+<td>MSRPC (<a href="/wiki/Microsoft" title="Microsoft">Microsoft</a> <a href="/wiki/Remote_procedure_call" class="mw-redirect" title="Remote procedure call">RPC</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>)&#160;— используется в приложениях «клиент—сервер» Microsoft (например, Exchange)
+</td>
+<td>Неофициально
+</td></tr>
+<tr bgcolor="khaki">
+<td>135/TCP,UDP</td>
+<td>LOC-SRV (Locator service)&#160;— используется службами удалённого обслуживания (<a href="/wiki/DHCP" title="DHCP">DHCP</a>, <a href="/wiki/Domain_Name_System" class="mw-redirect" title="Domain Name System">DNS</a>, <a href="/wiki/Windows_Internet_Name_Service" title="Windows Internet Name Service">WINS</a> и&#160;т.&#160;д.)</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>136/TCP,UDP</td>
+<td>PROFILE Naming System</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>137/TCP,UDP</td>
+<td>NETBIOS-NS (<a href="/wiki/NetBIOS" title="NetBIOS">NetBIOS</a> Name Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>138/TCP,UDP</td>
+<td>NETBIOS-DGM (<a href="/wiki/NetBIOS" title="NetBIOS">NetBIOS</a> Datagram Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>139/TCP,UDP</td>
+<td>NETBIOS-SSN (<a href="/wiki/NetBIOS" title="NetBIOS">NetBIOS</a> Session Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>140/TCP,UDP</td>
+<td>EMFIS-DATA (EMFIS Data Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>141/TCP,UDP</td>
+<td>EMFIS-CNTL (EMFIS Control Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>142/TCP,UDP</td>
+<td>BL-IDM (Britton-Lee IDM)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>143/TCP,UDP</td>
+<td>IMAP (<a href="/wiki/Internet_Message_Access_Protocol" class="mw-redirect" title="Internet Message Access Protocol">Internet Message Access Protocol</a>)&#160;— используется для получения и синхронизации сообщений электронной почты</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>144/TCP,UDP</td>
+<td>UMA (Universal Management Architecture)</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>144/TCP,UDP</td>
+<td>NEWS</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>145/TCP,UDP</td>
+<td>UAAC</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>146/TCP,UDP</td>
+<td>ISO-TP0</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>147/TCP,UDP</td>
+<td>ISO-IP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>148/TCP,UDP</td>
+<td>JARGON</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>148/TCP,UDP</td>
+<td>CRONUS</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>149/TCP,UDP</td>
+<td>AED-512</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>150/TCP,UDP</td>
+<td>SQL-NET</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>151/TCP,UDP</td>
+<td>HEMS</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>152/TCP,UDP</td>
+<td>BFTP (Background File Transfer Program)<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup></td>
+<td>Официально
+</td></tr>
+<tr>
+<td>153/TCP,UDP</td>
+<td>SGMP (<span class="iw plainlinks" data-title="Simple Gateway Monitoring Protocol" data-lang="en" data-lang-name="англ."><a href="/w/index.php?title=Simple_Gateway_Monitoring_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Simple Gateway Monitoring Protocol (страница отсутствует)">Simple Gateway Monitoring Protocol</a><sup class="iw&#95;_note noprint" style="font-style:normal; font-weight:normal;"><a href="https://en.wikipedia.org/wiki/Simple_Gateway_Monitoring_Protocol" class="extiw" title="en:Simple Gateway Monitoring Protocol"><span class="iw&#95;_tooltip" title="Simple Gateway Monitoring Protocol — версия статьи «Simple Gateway Monitoring Protocol» на английском языке">[en]</span></a></sup></span>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>154/TCP,UDP</td>
+<td>NETSC-PROD</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>155/TCP,UDP</td>
+<td>NETSC-DEV</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>156/TCP,UDP</td>
+<td>SQLSRV (<a href="/wiki/SQL" title="SQL">SQL</a> Service)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>157/TCP,UDP</td>
+<td>KNET-CMP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>158/TCP,UDP</td>
+<td>PCMAIL-SRV</td>
+<td>Официально
+</td></tr>
+<tr bgcolor="khaki">
+<td>158/TCP,UDP</td>
+<td>DMSP (Distributed Mail Service Protocol)</td>
+<td>Неофициально
+</td></tr>
+<tr>
+<td>159/TCP,UDP</td>
+<td>NSS-ROUTING</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>160/TCP,UDP</td>
+<td>SGMP-TRAPS</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>161/TCP,UDP</td>
+<td>SNMP (<a href="/wiki/Simple_Network_Management_Protocol" class="mw-redirect" title="Simple Network Management Protocol">Simple Network Management Protocol</a>)&#160;— используется как порт прослушивания агентами удалённого мониторинга</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>162/TCP,UDP</td>
+<td>SNMPTRAP (<a href="/wiki/Simple_Network_Management_Protocol" class="mw-redirect" title="Simple Network Management Protocol">Simple Network Management Protocol</a> Trap)<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>&#160;— используется как порт приёма асинхронных прерываний (traps)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>163/TCP,UDP</td>
+<td>CMIP-MAN (CMIP/TCP Manager)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>164/TCP,UDP</td>
+<td>CMIP-AGENT (CMIP/TCP Agent)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>165/TCP,UDP</td>
+<td>XNS-COURIER (<a href="/wiki/Xerox_Network_Services" title="Xerox Network Services">Xerox Network Services</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>166/TCP,UDP</td>
+<td>S-NET (Sirius Systems Network)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>167/TCP,UDP</td>
+<td>NAMP</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>168/TCP,UDP</td>
+<td>RSVD</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>169/TCP,UDP</td>
+<td>SEND</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>170/TCP,UDP</td>
+<td>PRINT-SRV (Network <a href="/wiki/PostScript" title="PostScript">PostScript</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>171/TCP,UDP</td>
+<td>MULTIPLEX (Network Innovations Multiplex)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>172/TCP,UDP</td>
+<td>CL-1 (Network Innovations CL/1); ранее&#160;— CL/1</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>173/TCP,UDP</td>
+<td>XYPLEX-MUX</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>174/TCP,UDP</td>
+<td>MAILQ</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>175/TCP,UDP</td>
+<td>VMNET</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>176/TCP,UDP</td>
+<td>GENRAD-MUX</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>177/TCP,UDP</td>
+<td>XDMCP (X Display Manager Control Protocol)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>178/TCP,UDP</td>
+<td>NEXTSTEP (NextStep Window Server)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>179/TCP,UDP</td>
+<td>BGP (<a href="/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">Border Gateway Protocol</a>)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>180/TCP,UDP</td>
+<td>RIS (Intergraph)</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>181/TCP,UDP</td>
+<td>UNIFY</td>
+<td>Официально
+</td></tr>
+<tr>
+<td>182/TCP,UDP</td>
+<td>AUDIT (Unisys Audit SITP)</td>
